@@ -1,0 +1,85 @@
+@font-face {
+  font-family: dancingscrpt;
+  src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
+body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
+  font-family: dancingscrpt;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgba(185, 177, 177, 0.473);
+}
+body::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb */
+}
+
+/* Optional: Style the track (the area behind the thumb) */
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* Hide the track */
+}
+
+#navExpandedPar {
+  background: url("../images/header.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#navCompact div div ul li a {
+  background: linear-gradient(#373737 0 0) bottom/0% 2px no-repeat;
+  transition: 1s all;
+}
+#navExpand div div ul li a {
+  background: linear-gradient(rgb(105, 86, 199) 0 0) bottom/0% 2px no-repeat;
+  transition: 1s all;
+}
+#navCompact div div ul li a:hover,
+#navExpand div div ul li a:hover {
+  background-size: 100% 2px;
+}
+
+#footer{
+  background: url("../images/footer.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#footer div.mask {
+  background-color: rgba(185, 177, 177, 0.473);
+}
+
+.button{
+  text-decoration: none;
+  color: black;
+  border: 2px solid rgb(105, 86, 199);
+  border-radius: 5px;
+  padding: 5px 40px;
+  transition: all ease-in-out 0.5s;
+}
+.button:hover{
+  background-color: rgba(46, 38, 86, 0.5);
+  border: 2px solid rgb(46, 38, 86);
+  color: rgb(35, 28, 65);
+}
+
+.subscribe input[type='email'] {
+  background-color: transparent;
+  border: 2px solid rgb(105, 86, 199);
+}
+
+.subscribe button.btn {
+  border: 2px solid rgb(105, 86, 199);
+  border-left: 0px;
+  color: rgb(105, 86, 199);
+}
+
+.form-control:focus{
+  border-color: transparent;
+  box-shadow: none;
+  outline: 0 none;
+}
