@@ -83,3 +83,20 @@ body::-webkit-scrollbar-track {
   box-shadow: none;
   outline: 0 none;
 }
+
+.abt-cnt{
+  align-items: center;
+}
+
+.icon{
+  height: 70px;
+  width: 70px;
+  background-color: #b5add1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #c4b3fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  color: #37276a;
+}
