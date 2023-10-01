@@ -1,0 +1,18 @@
+  #navExpandedPar{
+    background: url("../images/header2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #navCompact div div ul li a {
+    background: linear-gradient(#373737 0 0) bottom/0% 2px no-repeat;
+    transition: 1s all;
+  }
+  #navExpand div div ul li a {
+    background: linear-gradient(rgb(67, 58, 103) 0 0) bottom/0% 2px no-repeat;
+    transition: 1s all;
+  }
+  #navCompact div div ul li a:hover,
+  #navExpand div div ul li a:hover {
+    background-size: 100% 2px;
+  }
