@@ -95,6 +95,8 @@ body::-webkit-scrollbar-track {
   width: 100%;
   flex-direction: column;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .login .login__inner {
   display: flex;
@@ -102,6 +104,10 @@ body::-webkit-scrollbar-track {
   flex-wrap: wrap;
   align-content: center;
   padding: 0 2rem;
+  border-radius: 64px;
+  padding-block: 28px;
+  box-shadow: 4px 4px 35px grey;
+  border: 2px solid black;
 }
 .login .login__inner .login__header {
   display: flex;
