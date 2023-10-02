@@ -289,3 +289,9 @@ body::-webkit-scrollbar-track {
     margin: 0 auto;
  }
 }
+h1{
+  text-align:center;
+  text-decoration: solid black;
+  margin-top: 50px;
+  padding-top: 50px;
+}
