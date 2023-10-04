@@ -14,9 +14,19 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   </head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
   <body>
     <div class="container-fluid p-0 m-0">
       <div class="p-0 home" id="navExpandedPar">
@@ -94,13 +104,23 @@
           <br />
           <br />
           <br />
-          <div style="transition: all ease-out 0.5s; background-color: rgba(183, 183, 183, 0.2); backdrop-filter: blur(5px); box-shadow: 0 0 15px 10px rgba(183, 183, 183, 0.2);" id="descriptions" class="p-3">
-            <span id="shortDesc">
-            </span>
+          <div
+            style="
+              transition: all ease-out 0.5s;
+              background-color: rgba(183, 183, 183, 0.2);
+              backdrop-filter: blur(5px);
+              box-shadow: 0 0 15px 10px rgba(183, 183, 183, 0.2);
+            "
+            id="descriptions"
+            class="p-3"
+          >
+            <span id="shortDesc"> </span>
             <script>
               document.addEventListener("DOMContentLoaded", function () {
                 new TypeIt("#shortDesc", {
-                  strings: ["AcademIQ is an innovative education platform that enhances learning through personalized experiences. It leverages cutting-edge technology to tailor educational content to individual needs, fostering a more effective and engaging learning environment."],
+                  strings: [
+                    "AcademIQ is an innovative education platform that enhances learning through personalized experiences. It leverages cutting-edge technology to tailor educational content to individual needs, fostering a more effective and engaging learning environment.",
+                  ],
                 }).go();
               });
             </script>
@@ -191,15 +211,16 @@
           </div>
         </div>
       </nav>
-      <div class="container">
+      <div class="container mb-5">
         <div class="container about">
           <div class="row align-items-center">
             <div class="col-md-6">
               <h2>People choose us because of our services.</h2>
               <p>
-                Discover the platform that's transforming education, empowering educators,
-                <br>
-                 and creating brighter futures for students.
+                Discover the platform that's transforming education, empowering
+                educators,
+                <br />
+                and creating brighter futures for students.
               </p>
               <div class="row abt-cnt mt-4">
                 <div class="col-sm-2">
@@ -210,7 +231,11 @@
                 <div class="col-sm-7">
                   <div class="cnt">
                     <p class="fw-bold">Empowering Educators.</p>
-                    <p>Join a revolution in education! Our platform equips educators to unlock students' full potential, making learning exciting and impactful.</p>
+                    <p>
+                      Join a revolution in education! Our platform equips
+                      educators to unlock students' full potential, making
+                      learning exciting and impactful.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -223,7 +248,11 @@
                 <div class="col-sm-7">
                   <div class="cnt">
                     <p class="fw-bold">Student Data Analysis.</p>
-                    <p>Dive into data-driven education! We gather faculty data to personalize student growth, creating a more engaging learning journey.</p>
+                    <p>
+                      Dive into data-driven education! We gather faculty data to
+                      personalize student growth, creating a more engaging
+                      learning journey.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -236,29 +265,138 @@
                 <div class="col-sm-7">
                   <div class="cnt">
                     <p class="fw-bold">Unlocking Student Potential.</p>
-                    <p>Unleash the power of data! We maximize student potential through advanced analysis, igniting a path to transformative growth in education.</p>
+                    <p>
+                      Unleash the power of data! We maximize student potential
+                      through advanced analysis, igniting a path to
+                      transformative growth in education.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-              <img src="assets/images/abt-collage.png" alt="" class="w-100">
+              <img src="assets/images/abt-collage.png" alt="" class="w-100" />
+            </div>
+          </div>
+        </div>
+        <!-- <img src="assets/images/343098-PAK3SC-552.svg" alt="" style="width: 100vw;"> -->
+      </div>
+      <div class="image sl1"></div>
+      <div class="container mb-5">
+        <h1 class="heading mt-0">Testimonials</h1>
+        <p class="text-center">
+          <span
+            class="border-bottom border-1 px-5 pb-2 border-dark border-opacity-25"
+            >Our Happy Clients</span
+          >
+        </p>
+        <script>
+          let clients = [
+            {
+              name: "Johny",
+              work: "Teacher",
+              image: "assets/images/silhoutette2.jpeg",
+              text: "AcademIQ transformed our school. It personalized learning, improving results. Students love it, and so do we!",
+            },
+            {
+              name: "Marc",
+              work: "Vice chansellor",
+              image: "assets/images/silhouette1.jpeg",
+              text: "An exceptional platform! Engaging, effective, and easy to use. Our students' progress has never been better.",
+            },
+            {
+              name: "Bellatrix Lestrange",
+              work: "Principal",
+              image: "assets/images/silhoutette3.jpeg",
+              text: "AcademIQ's data-driven approach is a game-changer. It's reshaping education with personalized, impactful learning.",
+            },
+          ];
+          let index = 0;
+          window.addEventListener("DOMContentLoaded", () => {
+            changeClient();
+          });
+          function changeClient(value = "") {
+            if (value === "+") {
+              if (index + 1 > clients.length - 1) {
+                index = 0;
+              } else {
+                index++;
+              }
+            } else if (value === "-") {
+              if (index - 1 < 0) {
+                index = clients.length - 1;
+              } else {
+                index--;
+              }
+            }
+            document.querySelector("#client-name").innerHTML =
+              clients[index].name;
+            document.querySelector("#client-work").innerHTML =
+              clients[index].work;
+            document.querySelector("#client-image").src = clients[index].image;
+            document.querySelector("#client-quote").innerHTML =
+              clients[index].text;
+          }
+        </script>
+        <div class="banner-body d-flex justify-content-center">
+          <div class="center">
+            <div class="quote-card p-3">
+              <div class="quote-icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <div class="quote-text ps-3">
+                <p id="client-quote"></p>
+              </div>
+            </div>
+            <div class="quote-client align-items-center">
+              <div class="client-image-wrapper">
+                <img class="client-image" id="client-image" src="" />
+              </div>
+              <div class="client-info">
+                <h4 id="client-name"></h4>
+                <span id="client-work"></span>
+              </div>
+              <div class="client-changer">
+                <div class="left-slide" onclick="changeClient('-')">
+                  <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="right-slide" onclick="changeClient('+')">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="footer container-fluid" id="footer">
-        <div class="mask row" style="padding: 2rem;padding-top: 90px;">
+        <div class="mask row" style="padding: 2rem; padding-top: 90px">
           <div class="row align-items-center mb-5">
             <div class="col-sm-4">
-              <img src="assets/images/logo.svg" alt="" height="70">
+              <img src="assets/images/logo.svg" alt="" height="70" />
             </div>
             <div class="col-sm-4 subscribe">
-              <p class="text-center" style="border-bottom: 1px solid rgb(105, 86, 199);">Subscribe to us</p>
+              <p
+                class="text-center"
+                style="border-bottom: 1px solid rgb(105, 86, 199)"
+              >
+                Subscribe to us
+              </p>
               <form action="" method="post">
                 <div class="input-group">
-                  <input type="email" class="form-control email" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
-                  <button class="btn justify-content-center" type="button" id="button-addon2"><i class="bi bi-newspaper"></i></button>
+                  <input
+                    type="email"
+                    class="form-control email"
+                    placeholder="Email"
+                    aria-label="Email"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn justify-content-center"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    <i class="bi bi-newspaper"></i>
+                  </button>
                 </div>
               </form>
             </div>
@@ -271,9 +409,9 @@
             <div class="col-sm-6">
               <p>
                 <span class="fw-semibold">
-                  AcademIQ: Student Evaluation System 
+                  AcademIQ: Student Evaluation System
                 </span>
-                <br>
+                <br />
                 <span id="goalset" class="ps-3"></span>
                 <script>
                   document.addEventListener("DOMContentLoaded", function () {
@@ -282,65 +420,168 @@
                     }).go();
                   });
                 </script>
-                <br>
-                <span class="ps-3">Our goal is to determine the student's performance and take out best from them.</span>
-                <br>
-                <p class="my-5">
-                  <span class="fw-bold">Follow us on: </span>
-                  <span>
-                    <a href="#" target="_blank" class="text-dark text-decoration-none me-2"><i class="bi bi-instagram"></i></a>
-                    <a href="#" target="_blank" class="text-dark text-decoration-none me-2"><i class="bi bi-facebook"></i></a>
-                    <a href="#" target="_blank" class="text-dark text-decoration-none me-2"><i class="bi bi-github"></i></a>
-                    <a href="#" target="_blank" class="text-dark text-decoration-none me-2"><i class="bi bi-linkedin"></i></a>
-                  </span>
-                  <br>
-                  <span class="fw-bold">Fine prints: </span>
-                  <span>
-                    <a href="#" target="_blank" class="text-dark me-2">Terms & Conditions</a>
-                  </span>
-                </p>
-                <br>
-                <p class="mt-2">
-                  Copyright &copy; 2023<span id="currYear"></span> AcademIQ. <br/>
-                  Enjoy your rest of the <span id="currDay"></span>!
-                </p>
-                <script>
-                  document.addEventListener("DOMContentLoaded", function () {
-                    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-                    const date = new Date();
-                    if(date.getFullYear() != '2023'){
-                      document.getElementById('currYear').innerText = " - " + date.getFullYear();
-                    }
-                    document.getElementById('currDay').innerText = days[date.getDay()];
-                  });
-                </script>
+                <br />
+                <span class="ps-3"
+                  >Our goal is to determine the student's performance and take
+                  out best from them.</span
+                >
+                <br />
+              </p>
+
+              <p class="my-5">
+                <span class="fw-bold">Follow us on: </span>
+                <span>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </span>
+                <br />
+                <span class="fw-bold">Fine prints: </span>
+                <span>
+                  <a href="#" target="_blank" class="text-dark me-2"
+                    >Terms & Conditions</a
+                  >
+                </span>
+              </p>
+              <br />
+              <p class="mt-2">
+                Copyright &copy; 2023<span id="currYear"></span> AcademIQ.
+                <br />
+                Enjoy your rest of the <span id="currDay"></span>!
+              </p>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const days = [
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                  ];
+                  const date = new Date();
+                  if (date.getFullYear() != "2023") {
+                    document.getElementById("currYear").innerText =
+                      " - " + date.getFullYear();
+                  }
+                  document.getElementById("currDay").innerText =
+                    days[date.getDay()];
+                });
+              </script>
             </div>
             <div class="col-sm-6">
               <div class="row">
                 <div class="col-sm-6 text-end">
-                  <span class="fw-bold border-bottom border-dark">Overview</span><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Pricing</a><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Services</a><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Themes</a><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Contact us</a><br>
+                  <span class="fw-bold border-bottom border-dark">Overview</span
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Pricing</a
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Services</a
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Themes</a
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Contact us</a
+                  ><br />
                 </div>
                 <div class="col-sm-6">
-                  <span class="fw-bold border-bottom border-dark">Resources</span><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Help Center</a><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Ebook Library</a><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Free Consultation</a><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Trusted By</a><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Testimonials</a><br>
-                  <a href="#" target="_blank" class="text-dark text-decoration-none me-2">Affiliates</a><br>
+                  <span class="fw-bold border-bottom border-dark"
+                    >Resources</span
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Help Center</a
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Ebook Library</a
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Free Consultation</a
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Trusted By</a
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Testimonials</a
+                  ><br />
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="text-dark text-decoration-none me-2"
+                    >Affiliates</a
+                  ><br />
                 </div>
               </div>
               <div class="row d-flex gap-2 mt-5 flex-row-reverse me-4">
-                <i class="fa-brands fa-cc-mastercard" style="width: max-content;"></i>
-                <i class="fa-brands fa-cc-visa" style="width: max-content;"></i>
-                <i class="fa-brands fa-paypal" style="width: max-content;"></i>
-                <i class="fa-brands fa-google-pay" style="width: max-content;"></i>
-                <i class="fa-brands fa-apple-pay" style="width: max-content;"></i>
-                <i class="fa-brands fa-amazon-pay" style="width: max-content;"></i>
+                <i
+                  class="fa-brands fa-cc-mastercard"
+                  style="width: max-content"
+                ></i>
+                <i class="fa-brands fa-cc-visa" style="width: max-content"></i>
+                <i class="fa-brands fa-paypal" style="width: max-content"></i>
+                <i
+                  class="fa-brands fa-google-pay"
+                  style="width: max-content"
+                ></i>
+                <i
+                  class="fa-brands fa-apple-pay"
+                  style="width: max-content"
+                ></i>
+                <i
+                  class="fa-brands fa-amazon-pay"
+                  style="width: max-content"
+                ></i>
               </div>
             </div>
           </div>
