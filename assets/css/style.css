@@ -174,83 +174,6 @@ div.image.sl2{
   display: none;
 }
 
-@media (min-width: 300px) and (max-width: 767px) {
-  .quote-card {
-    width: 180%;
-  }
-  .quote-client{
-    flex-direction: column;
-  }
-  .client-info {
-    margin-block: 10px;
-    margin-inline-start: 0;
-    text-align: center;
-  }
-  .client-changer{
-    justify-content: unset;
-    width: unset;
-  }
-  .footer .footer-upper{
-    gap: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem !important;
-  }
-  .hide-in-mobile{
-    display: none !important;
-  }
-  .mobile-wid-50{
-    width: 50%;
-  }
-  .mobile-text-center{
-    text-align: center;
-  }
-  .show-in-mobile{
-    display: unset;
-  }
-  .mobile-width-27{
-    width: 27%;
-  }
-  .mobile-width-73{
-    width: 73%;
-  }
-  .mobile-row-rev{
-    flex-direction: row-reverse;
-    padding-right: 20px;
-  }
-  div.image.sl1{
-    background: url(../images/books.jpg);
-    background-size: contain;
-    background-attachment: fixed;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  .client-image-wrapper{
-    min-width: 31%;
-  }
-  .tab-hide{
-    display: none !important;
-  }
-  .tab-justify-around{
-    justify-content: space-around;
-  }
-  .tab-flex-col{
-    flex-direction: column;
-  }
-  .tab-wd-100{
-    width: 100%;
-  }
-  .tab-text-center{
-    text-align: center;
-  }
-  .tab-justify-center{
-    justify-content: center;
-  }
-  .tab-row-rev{
-    flex-direction: row-reverse;
-  }
-}
-
 .overlay {
   position: relative;
   display: flex;
@@ -463,4 +386,92 @@ h1{
   text-decoration: solid black;
   margin-top: 50px;
   padding-top: 50px;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .quote-card {
+    width: 180%;
+  }
+  .quote-client{
+    flex-direction: column;
+  }
+  .client-info {
+    margin-block: 10px;
+    margin-inline-start: 0;
+    text-align: center;
+  }
+  .client-changer{
+    justify-content: unset;
+    width: unset;
+  }
+  .footer .footer-upper{
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem !important;
+    flex-direction: column;
+  }
+  .footer .footer-upper div{
+    justify-content: center;
+  }
+  .hide-in-mobile{
+    display: none !important;
+  }
+  .mobile-wid-50{
+    width: 50%;
+  }
+  .mobile-text-center{
+    text-align: center;
+  }
+  .show-in-mobile{
+    display: unset;
+  }
+  .mobile-width-27{
+    width: 27%;
+  }
+  .mobile-width-73{
+    width: 73%;
+  }
+  .mobile-row-rev{
+    flex-direction: row-reverse;
+    padding-right: 20px;
+  }
+  div.image.sl1{
+    background: url(../images/books.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  .client-changer .right-slide,.client-changer .left-slide{
+    height: 45px;
+    width: 40px;
+  }
+  .mobile-d-flex{
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .client-image-wrapper{
+    min-width: 31%;
+  }
+  .tab-hide{
+    display: none !important;
+  }
+  .tab-justify-around{
+    justify-content: space-around;
+  }
+  .tab-flex-col{
+    flex-direction: column;
+  }
+  .tab-wd-100{
+    width: 100%;
+  }
+  .tab-text-center{
+    text-align: center;
+  }
+  .tab-justify-center{
+    justify-content: center;
+  }
+  .tab-row-rev{
+    flex-direction: row-reverse;
+  }
 }

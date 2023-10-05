@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/others.css" />
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <link
       rel="stylesheet"
@@ -25,24 +25,92 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-  </head>
+    <style>
+      .signup-field-group i {
+        position: relative;
+        top: 45px;
+        left: 15px;
+        font-size: 25px;
+      }
+      .signup-field-group input {
+        display: flex;
+        width: 100%;
+        padding: 1rem 4rem;
+        background: transparent;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+      }
+      .signup-field-group input::placeholder{
+        color: transparent;
+      }
+      .signup-field-group label {
+        position: relative;
+        top: -45px;
+        left: 60px;
+        pointer-events: none;
+        transition: all 0.3s ease;
+      }
+      .signup-field-group input:active ~ label,
+      .signup-field-group input:focus ~ label,
+      .signup-field-group input:not(:placeholder-shown) ~ label {
+        position: relative;
+        top: -70px;
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+      }
 
+      .avatar-selection {
+        display: flex;
+        justify-content: center;
+      }
+
+      .avatar-selection label {
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        margin: 20px;
+      }
+
+      .avatar-selection input[type="radio"] {
+        display: none;
+      }
+
+      .avatar-selection img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        transition: border-color 0.3s ease;
+      }
+
+      .avatar-selection label:hover img {
+        border-color: #3498db;
+      }
+
+      .avatar-selection input[type="radio"]:checked + img {
+        border-color: #2ecc71;
+      }
+
+      .avatar-selection p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
   <body>
     <div class="container-fluid p-0 m-0">
-      <div class="p-0 home" id="navExpandedPar">
+      <div class="p-0" id="navExpandedPar">
         <nav
           class="navbar navbar-expand-lg"
           style="transition: all ease 0.5s"
           id="navExpand"
         >
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
-                src="assets/images/logo.svg"
-                alt=""
-                height="50"
-                loading="lazy"
-              />
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo.svg" alt="" height="50" />
             </a>
             <button
               class="navbar-toggler"
@@ -64,7 +132,7 @@
                   <a class="nav-link" href="contact-us.html">Contact us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="login.html">Login</a>
+                  <a class="nav-link">Login</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="register.html">Register</a>
@@ -95,60 +163,6 @@
             </div>
           </div>
         </nav>
-        <div class="container text-center mt-3">
-          <span
-            style="
-              border-bottom: 1px solid black;
-              padding-inline: 15px;
-              font-size: 35px;
-              font-weight: 500;
-            "
-            >AcademIQ</span
-          >
-          <br />
-          <br />
-          <br />
-          <br />
-          <div
-            style="
-              transition: all ease-out 0.5s;
-              background-color: rgba(183, 183, 183, 0.2);
-              backdrop-filter: blur(5px);
-              box-shadow: 0 0 15px 10px rgba(183, 183, 183, 0.2);
-            "
-            id="descriptions"
-            class="p-3"
-          >
-            <span id="shortDesc"> </span>
-            <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                new TypeIt("#shortDesc", {
-                  strings: [
-                    "AcademIQ is an innovative education platform that enhances learning through personalized experiences. It leverages cutting-edge technology to tailor educational content to individual needs, fostering a more effective and engaging learning environment.",
-                  ],
-                }).go();
-              });
-            </script>
-            <br />
-            <br />
-            <br />
-            <span id="shortInfo">
-              At AcademIQ, we're driven by a singular mission: to empower
-              educators and enlighten students. Our platform offers a wide range
-              of cutting-edge tools and features designed to enhance education
-              in meaningful ways.
-            </span>
-          </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        </div>
       </div>
       <nav
         class="navbar navbar-expand-lg fixed-top"
@@ -162,13 +176,8 @@
         id="navCompact"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="assets/images/logo.svg"
-              alt=""
-              height="50"
-              loading="lazy"
-            />
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.svg" alt="" height="50" />
           </a>
           <button
             class="navbar-toggler"
@@ -184,13 +193,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
               <li class="nav-item">
-                <a class="nav-link underline" href="about us.html">About us</a>
+                <a class="nav-link underline" href="about-us.html">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact us.html">Contact us</a>
+                <a class="nav-link" href="contact-us.html">Contact us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link">Login</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="register.html">Register</a>
@@ -221,174 +230,87 @@
           </div>
         </div>
       </nav>
-      <div class="container mb-5">
-        <div class="container about">
-          <div class="row align-items-center tab-flex-col">
-            <div class="col-md-6 tab-wd-100">
-              <h2 class="tab-text-center">
-                People choose us because of our services.
-              </h2>
-              <p class="tab-text-center">
-                Discover the platform that's transforming education, empowering
-                educators,
-                <br />
-                and creating brighter futures for students.
-              </p>
-              <div class="row abt-cnt mt-4 tab-justify-center">
-                <div class="col-sm-2 mobile-width-27">
-                  <div class="icon">
-                    <i class="bi bi-people"></i>
-                  </div>
-                </div>
-                <div class="col-sm-7 mobile-width-73">
-                  <div class="cnt">
-                    <p class="fw-bold">Empowering Educators.</p>
-                    <p>
-                      Join a revolution in education! Our platform equips
-                      educators to unlock students' full potential, making
-                      learning exciting and impactful.
-                    </p>
-                  </div>
-                </div>
+      <div class="container">
+        <div
+          class="box my-5"
+          style="
+            border: 2px solid black;
+            box-shadow: 4px 4px 35px grey;
+            padding-inline: 50px;
+            border-radius: 64px;
+          "
+        >
+          <h1 class="heading">Sign Up</h1>
+          <p class="text-center">
+            Not having an account? Don't worry, you can create it here
+          </p>
+          <div class="form my-3">
+            <form>
+              <div class="form-group signup-field-group">
+                <i class="fa-solid fa-font"></i>
+                <input type="text" name="name" id="name" class="signup-field" placeholder=""/>
+                <label for="name">Name</label>
+              </div>
+              <div class="form-group signup-field-group">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="signup-field"
+                  placeholder=""
+                />
+                <label for="email">Email</label>
               </div>
               <div
-                class="row abt-cnt mt-4 mobile-row-rev tab-justify-center tab-row-rev"
+                class="form-group signup-field-group d-flex justify-content-between"
               >
-                <div class="col-sm-2 mobile-width-27">
-                  <div class="icon">
-                    <i class="bi bi-bar-chart"></i>
-                  </div>
+                <div style="width: 48%">
+                  <i class="fa-solid fa-unlock-keyhole"></i>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="signup-field"
+                    placeholder=""
+                  />
+                  <label for="password">Password</label>
                 </div>
-                <div class="col-sm-7 mobile-width-73">
-                  <div class="cnt">
-                    <p class="fw-bold">Student Data Analysis.</p>
-                    <p>
-                      Dive into data-driven education! We gather faculty data to
-                      personalize student growth, creating a more engaging
-                      learning journey.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="row abt-cnt mt-4 tab-justify-center">
-                <div class="col-sm-2 mobile-width-27">
-                  <div class="icon">
-                    <i class="bi bi-rocket"></i>
-                  </div>
-                </div>
-                <div class="col-sm-7 mobile-width-73">
-                  <div class="cnt">
-                    <p class="fw-bold">Unlocking Student Potential.</p>
-                    <p>
-                      Unleash the power of data! We maximize student potential
-                      through advanced analysis, igniting a path to
-                      transformative growth in education.
-                    </p>
-                  </div>
+                <div style="width: 48%">
+                  <i class="fa-solid fa-unlock-keyhole"></i>
+                  <input
+                    type="password"
+                    name="cnfpassword"
+                    id="cnfpassword"
+                    class="signup-field"
+                    placeholder=""
+                  />
+                  <label for="cnfpassword">Confirm Password</label>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <img
-                src="assets/images/abt-collage.png"
-                alt=""
-                class="w-100"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- <img src="assets/images/343098-PAK3SC-552.svg" alt="" style="width: 100vw;"> -->
-      </div>
-      <div class="image sl1"></div>
-      <div class="container mb-5">
-        <h1 class="heading mt-0">Testimonials</h1>
-        <p class="text-center">
-          <span
-            class="border-bottom border-1 px-5 pb-2 border-dark border-opacity-25"
-            >Our Happy Clients</span
-          >
-        </p>
-        <script>
-          let clients = [
-            {
-              name: "Johny",
-              work: "Teacher",
-              image: "assets/images/silhoutette2.jpeg",
-              text: "AcademIQ transformed our school. It personalized learning, improving results. Students love it, and so do we!",
-            },
-            {
-              name: "Marc",
-              work: "Vice chansellor",
-              image: "assets/images/silhouette1.jpeg",
-              text: "An exceptional platform! Engaging, effective, and easy to use. Our students' progress has never been better.",
-            },
-            {
-              name: "Bellatrix Lestrange",
-              work: "Principal",
-              image: "assets/images/silhoutette3.jpeg",
-              text: "AcademIQ's data-driven approach is a game-changer. It's reshaping education with personalized, impactful learning.",
-            },
-          ];
-          let index = 0;
-          window.addEventListener("DOMContentLoaded", () => {
-            changeClient();
-          });
-          function changeClient(value = "") {
-            if (value === "+") {
-              if (index + 1 > clients.length - 1) {
-                index = 0;
-              } else {
-                index++;
-              }
-            } else if (value === "-") {
-              if (index - 1 < 0) {
-                index = clients.length - 1;
-              } else {
-                index--;
-              }
-            }
-            document.querySelector("#client-name").innerHTML =
-              clients[index].name;
-            document.querySelector("#client-work").innerHTML =
-              clients[index].work;
-            document.querySelector("#client-image").src = clients[index].image;
-            document.querySelector("#client-quote").innerHTML =
-              clients[index].text;
-          }
-        </script>
-        <div class="banner-body d-flex justify-content-center">
-          <div class="center">
-            <div class="quote-card p-3">
-              <div class="quote-icon">
-                <i class="fas fa-quote-right"></i>
+              <div class="avatar-selection">
+                <label for="male-avatar">
+                  <input
+                    type="radio"
+                    id="male-avatar"
+                    name="gender"
+                    value="male"
+                  />
+                  <img src="assets/images/male.jpg" alt="Male Avatar" />
+                  <p>Male</p>
+                </label>
+                <label for="female-avatar">
+                  <input
+                    type="radio"
+                    id="female-avatar"
+                    name="gender"
+                    value="female"
+                  />
+                  <img src="assets/images/female.jpg" alt="Female Avatar" />
+                  <p>Female</p>
+                </label>
               </div>
-              <div class="quote-text ps-3">
-                <p id="client-quote"></p>
-              </div>
-            </div>
-            <div class="quote-client align-items-center">
-              <div class="client-image-wrapper">
-                <img
-                  class="client-image"
-                  id="client-image"
-                  src=""
-                  loading="lazy"
-                />
-              </div>
-              <div class="client-info">
-                <h4 id="client-name"></h4>
-                <span id="client-work"></span>
-              </div>
-              <div class="client-changer">
-                <div class="left-slide" onclick="changeClient('-')">
-                  <i class="fas fa-arrow-left"></i>
-                </div>
-                <div class="right-slide" onclick="changeClient('+')">
-                  <i class="fas fa-arrow-right"></i>
-                </div>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

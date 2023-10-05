@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gender Selection</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.avatar-selection {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar-selection label {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.avatar-selection input[type="radio"] {
+    display: none;
+}
+
+.avatar-selection img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.avatar-selection label:hover img {
+    border-color: #3498db;
+}
+
+.avatar-selection input[type="radio"]:checked + img {
+    border-color: #2ecc71;
+}
+
+.avatar-selection p {
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Select Your Gender</h2>
+    <div class="avatar-selection">
+        <label for="male-avatar">
+            <input type="radio" id="male-avatar" name="gender" value="male">
+            <img src="assets/images/male.jpg" alt="Male Avatar">
+            <p>Male</p>
+        </label>
+        <label for="female-avatar">
+            <input type="radio" id="female-avatar" name="gender" value="female">
+            <img src="assets/images/female.jpg" alt="Female Avatar">
+            <p>Female</p>
+        </label>
+    </div>
+</body>
+</html>
