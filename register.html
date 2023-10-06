@@ -25,80 +25,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-      .signup-field-group i {
-        position: relative;
-        top: 45px;
-        left: 15px;
-        font-size: 25px;
-      }
-      .signup-field-group input {
-        display: flex;
-        width: 100%;
-        padding: 1rem 4rem;
-        background: transparent;
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
-        border: none;
-        outline: none;
-        box-shadow: none;
-        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
-      }
-      .signup-field-group input::placeholder{
-        color: transparent;
-      }
-      .signup-field-group label {
-        position: relative;
-        top: -45px;
-        left: 60px;
-        pointer-events: none;
-        transition: all 0.3s ease;
-      }
-      .signup-field-group input:active ~ label,
-      .signup-field-group input:focus ~ label,
-      .signup-field-group input:not(:placeholder-shown) ~ label {
-        position: relative;
-        top: -70px;
-        color: rgba(0, 0, 0, 0.3);
-        font-size: 18px;
-      }
-
-      .avatar-selection {
-        display: flex;
-        justify-content: center;
-      }
-
-      .avatar-selection label {
-        display: block;
-        text-align: center;
-        cursor: pointer;
-        margin: 20px;
-      }
-
-      .avatar-selection input[type="radio"] {
-        display: none;
-      }
-
-      .avatar-selection img {
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        border: 2px solid transparent;
-        transition: border-color 0.3s ease;
-      }
-
-      .avatar-selection label:hover img {
-        border-color: #3498db;
-      }
-
-      .avatar-selection input[type="radio"]:checked + img {
-        border-color: #2ecc71;
-      }
-
-      .avatar-selection p {
-        font-weight: bold;
-      }
-    </style>
   </head>
   <body>
     <div class="container-fluid p-0 m-0">
@@ -231,24 +157,42 @@
         </div>
       </nav>
       <div class="container">
-        <div
-          class="box my-5"
-          style="
-            border: 2px solid black;
-            box-shadow: 4px 4px 35px grey;
-            padding-inline: 50px;
-            border-radius: 64px;
-          "
-        >
-          <h1 class="heading">Sign Up</h1>
+        <div class="signupbox my-5 pb-5">
+          <div class="progress mt-4">
+            <div class="text-center">  
+              <div class="circle-loader circle-loader1">
+                <div class="status draw"></div>
+              </div>
+              <p>Basic Details</p>
+            </div>
+            <div class="text-center">
+              <div class="circle-loader circle-loader2">
+                <div class="status draw"></div>
+              </div>
+              <p>OTP Verification</p>
+            </div>
+            <div class="text-center">
+              <div class="circle-loader circle-loader3">
+                <div class="status draw"></div>
+              </div>
+              <p>Full Details</p>
+            </div>
+          </div>
+          <h1 class="heading mt-2 pt-3">Sign Up</h1>
           <p class="text-center">
             Not having an account? Don't worry, you can create it here
           </p>
           <div class="form my-3">
-            <form>
+            <form method="post" id="form1">
               <div class="form-group signup-field-group">
                 <i class="fa-solid fa-font"></i>
-                <input type="text" name="name" id="name" class="signup-field" placeholder=""/>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="signup-field"
+                  placeholder=""
+                />
                 <label for="name">Name</label>
               </div>
               <div class="form-group signup-field-group">
@@ -263,9 +207,9 @@
                 <label for="email">Email</label>
               </div>
               <div
-                class="form-group signup-field-group d-flex justify-content-between"
+                class="form-group signup-field-group d-flex justify-content-between block-993"
               >
-                <div style="width: 48%">
+                <div style="width: 48%" class="width-100-993">
                   <i class="fa-solid fa-unlock-keyhole"></i>
                   <input
                     type="password"
@@ -276,7 +220,7 @@
                   />
                   <label for="password">Password</label>
                 </div>
-                <div style="width: 48%">
+                <div style="width: 48%" class="width-100-993">
                   <i class="fa-solid fa-unlock-keyhole"></i>
                   <input
                     type="password"
@@ -310,7 +254,94 @@
                   <p>Female</p>
                 </label>
               </div>
+              <button type="submit" class="form-button">
+                <span>
+                  Next
+                </span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
             </form>
+            <form method="post" id="form2" style="display: none;">
+              <div class="form-group signup-field-group">
+                <i class="bi bi-chat-square-dots-fill"></i>
+                <input
+                  type="text"
+                  name="otp"
+                  id="otp"
+                  class="signup-field"
+                  placeholder=""
+                />
+                <label for="otp">OTP</label>
+              </div>
+              <div class="d-flex gap-3">
+                <button type="submit" class="form-button hover-p-3 back">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                  <span>
+                    Back
+                  </span>
+                </button>
+                <button type="submit" class="form-button hover-p-3 next">
+                  <span>
+                    Next
+                  </span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </form>
+            <div id="form3" style="display: none;" class="details-tab">
+              <div class="demo">
+                <div class="tab">
+                  <div class="tab-wrapper">
+                    <!-- Tab 1 -->
+                    <input id="tab1" type="radio" name="tabsA" checked>
+                    <label for="tab1">Tab 1</label>
+                    <div class="tab-content">Dive into the dynamic world of technology with our in-depth articles and analyses. Stay informed about the latest trends in AI, cybersecurity, cloud computing, and more. Explore how technology is reshaping industries and our daily lives. Join us on a journey through the digital frontier.</div>
+              
+                    <!-- Tab 2 -->
+                    <input id="tab2" type="radio" name="tabsA">
+                    <label class="tab-button" for="tab2">Tab 2</label>
+                    <div class="tab-content">Embark on virtual journeys to some of the world's most captivating travel destinations. From the sun-kissed beaches of Bali to the ancient wonders of Machu Picchu, our travel narratives will transport you to exotic locales, offering travel tips, cultural insights, and awe-inspiring photographs.</div>
+              
+                    <!-- Tab 3 -->
+                    <input id="tab3" type="radio" name="tabsA">
+                    <label for="tab3">Tab 3</label>
+                    <div class="tab-content">Prioritize your well-being with our holistic approach to healthy living. Discover mindfulness techniques, yoga routines, and nutritional guidance to nurture your body and mind. Explore the profound impact of meditation and self-care practices on your overall happiness and balance.</div>
+              
+                    <!-- Tab 4 -->
+                    <input id="tab4" type="radio" name="tabsA">
+                    <label for="tab4">Etc...</label>
+                    <div class="tab-content">Immerse yourself in the vibrant world of creative arts. Delve into the works of visionary artists, explore the principles of design, and get inspired by photography that captures the essence of human expression. Join us in celebrating the beauty and diversity of artistic creativity.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <form method="post" id="form3" style="display: none;">
+              <div class="form-group signup-field-group">
+                <i class="fa-solid fa-font"></i>
+                <input
+                  type="text"
+                  name="otp"
+                  id="otp"
+                  class="signup-field"
+                  placeholder=""
+                />
+                <label for="otp">OTP</label>
+              </div>
+              <div class="d-flex gap-3">
+                <button type="submit" class="form-button hover-p-3 back">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                  <span>
+                    Back
+                  </span>
+                </button>
+                <button type="submit" class="form-button hover-p-3 next">
+                  <span>
+                    Next
+                  </span>
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </form> -->
           </div>
         </div>
       </div>
@@ -591,5 +622,50 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/script.js"></script>
+    <script>
+      document.getElementById("form1").addEventListener("submit", function(event){
+        event.preventDefault();
+        document.getElementById("form1").style.display="none";
+        document.getElementById("form2").style.display="unset";
+        document.querySelector('.circle-loader1').classList.add('success');
+      });
+
+      document.getElementById("form2").addEventListener("submit", function(event){
+        event.preventDefault();
+        document.getElementById("form2").style.display="none";
+        document.getElementById("form3").style.display="unset";
+        if(event.submitter.classList.contains('back')){
+          document.getElementById("form1").style.display="unset";
+          document.getElementById("form3").style.display="none";
+          document.querySelector('.circle-loader2').classList.remove('success');
+          document.querySelector('.circle-loader1').classList.remove('success');
+        } else {
+          document.querySelector('.circle-loader2').classList.add('success');
+        }
+      });
+      
+      document.getElementById("form3").addEventListener("submit", function(event){
+        event.preventDefault();
+        if(event.submitter.classList.contains('back')){
+          document.getElementById("form2").style.display="unset";
+          document.querySelector('.circle-loader3').classList.remove('success');
+          document.querySelector('.circle-loader2').classList.remove('success');
+        } else {
+          document.querySelector('.circle-loader3').classList.add('success');
+        }
+        window.setInterval(()=>{
+          window.location.href = "login.html";
+        })
+      }, 1000);
+
+      var statusChange = function(status){
+        var el = document.querySelector('.circle-loader')
+        el.classList.remove('success');
+        el.classList.remove('failed');
+        console.log(el);
+        el.classList.add('circle-loader');
+        el.classList.add(status);
+      }
+    </script>
   </body>
 </html>
